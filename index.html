@@ -4,6 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+    rel="stylesheet">
   <link href="style.css" rel="stylesheet" type="text/css">
   <title>Michael Chong - Full Stack Developer</title>
 </head>
@@ -11,10 +15,10 @@
 <body>
   <header>
     <div class="logo">
-      <img src="img/logo.png" alt="">
+      <i class="fa-solid fa-code"></i>
     </div>
     <button class="nav-toggle" aria-label="toggle navigation">
-      <span class="hamburger"></span>
+      <span class="hamburger"><i class="fa-solid fa-bars"></i></span>
     </button>
     <nav class="nav">
       <ul class="nav__list">
@@ -32,29 +36,27 @@
     <h1 class="section__title section__title--home">Michael Chong</h1>
     <p class="section__subtitle section__subtitle--home">full stack developer</p>
     <img src="img/profile.jpg" alt="a picture of Michael Chong" class="home__img">
-    <div id="badges">
-      <a href="https://www.linkedin.com/in/michaeljchong/">
-        <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white"
-          alt="LinkedIn badge">
-      </a>
-      <a href="https://github.com/michaeljchong">
-        <img src="https://img.shields.io/badge/GitHub-black?style=for-the-badge&logo=github&logoColor=white"
-          alt="GitHub badge">
-      </a>
+    <ul class="social-list">
+      <li class="social-list__item"><a href="https://www.linkedin.com/in/michaeljchong/" class="social-list__link">
+        <i class="fa-brands fa-linkedin"></i></a>
+      </li>
+      <li class="social-list__item"><a href="https://github.com/michaeljchong" class="social-list__link">
+          <i class="fa-brands fa-github"></i></a>
+      </li>
     </div>
   </section>
 
   <!-- About Me -->
-  <section class="about-me" id="about">
+  <section class="about" id="about">
     <h2 class="section__title section__title--about">About Me 👋</h2>
     <p class="section__subtitle section__subtitle--about">a very brief introduction</p>
-    <div class="about-me__body">
+    <div class="about__body">
       <p>📍 Currently residing in Los Angeles</p>
       <p>🎓 B.S. in Electrical Engineering from UCLA</p>
       <p>
         🌿 In my free time I like to get outside and soak up the weather and environment any way I can.
-        Usually that involves a hobby 🚴 🥾 🧗 &#127938; &#127940; &#127957; 
-        but I'm just as content with finding a patch of grass to plop down and enjoy the sights and sounds.
+        Usually that involves a hobby 🚲 🥾 🧗 🏂 🏄 🏕️ ⛳️
+        but I'm just as content with finding a patch of grass to plop down on and enjoy the sights and sounds around me.
       </p>
       <p>
         🔭 I'm looking for a career that challenges me daily and ideally involves creativity, design, and building.
@@ -64,39 +66,39 @@
   </section>
 
   <!-- Portfolio -->
-  <section class="my-portfolio" id="portfolio">
+  <section class="portfolio" id="portfolio">
     <h2 class="section__title section__title--portfolio">Portfolio 🗂️</h2>
     <p class="section__subtitle section__subtitle--portfolio">here are a few projects I've worked on</p>
     <div class="portfolio__body">
 
       <!-- Flight Booker -->
       <a href="" class="portfolio__item">
-        <img src="" alt="" class="project__img">
-        <p class="project__title">Flight Booker</p>
+        <img src="" alt="" class="portfolio__img">
+        <p class="portfolio__title">Flight Booker</p>
       </a>
 
       <!-- Flickr API Integration -->
       <a href="" class="portfolio__item">
-        <img src="" alt="" class="project__img">
-        <p class="project__title">Flickr API</p>
+        <img src="" alt="" class="portfolio__img">
+        <p class="portfolio__title">Flickr API</p>
       </a>
 
       <!-- Private Events -->
       <a href="" class="portfolio__item">
-        <img src="" alt="" class="project__img">
-        <p class="project__title">Private Events</p>
+        <img src="" alt="" class="portfolio__img">
+        <p class="portfolio__title">Private Events</p>
       </a>
 
       <!-- Project 4 -->
       <a href="" class="portfolio__item">
-        <img src="" alt="" class="project__img">
-        <p class="project__title"><!-- Project 4 --></p>
+        <img src="" alt="" class="portfolio__img">
+        <p class="portfolio__title"><!-- Project 4 --></p>
       </a>
     </div>
   </section>
 
   <!-- Toolkit -->
-  <section class="my-toolkit" id="toolkit">
+  <section class="toolkit" id="toolkit">
     <h2 class="section__title section__title--toolkit">Toolkit 💻</h2>
     <p class="section__subtitle section__subtitle--toolkit">what's in the stack</p>
     <div class="toolkit__body">
@@ -111,6 +113,10 @@
       </ul>
     </div>
   </section>
+
+  <footer>
+
+  </footer>
 </body>
 
 </html>
