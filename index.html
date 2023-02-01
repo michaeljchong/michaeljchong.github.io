@@ -13,19 +13,16 @@
 </head>
 
 <body>
-  <header>
-    <div class="logo">
-      <i class="fa-solid fa-code"></i>
-    </div>
+  <header class="header">
     <button class="nav-toggle" aria-label="toggle navigation">
-      <span class="hamburger"><i class="fa-solid fa-bars"></i></span>
+      <span class="hamburger"></span>
     </button>
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
         <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
         <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
-        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+        <li class="nav__item"><a href="#tools" class="nav__link">Tools</a></li>
         <li class="nav__item"><a href="#resume" class="nav__link">Resume</a></li>
       </ul>
     </nav>
@@ -40,7 +37,7 @@
 
   <!-- About Me -->
   <section class="about" id="about">
-    <h2 class="section__title section__title--about">About Me 🧑‍💻</h2>
+    <h2 class="section__title section__title--about">About Me 🧑🏻‍💻</h2>
     <p class="section__subtitle section__subtitle--about">a very brief introduction</p>
     <div class="about__body">
       <p>📍 Currently residing in Los Angeles</p>
@@ -62,25 +59,21 @@
     <h2 class="section__title section__title--portfolio">Portfolio 🗂️</h2>
     <p class="section__subtitle section__subtitle--portfolio">here are a few projects I've worked on</p>
     <div class="portfolio__body">
-
       <!-- Flight Booker -->
       <a href="" class="portfolio__item">
         <img src="" alt="" class="portfolio__img">
         <p class="portfolio__title">Flight Booker</p>
       </a>
-
       <!-- Flickr API Integration -->
       <a href="" class="portfolio__item">
         <img src="" alt="" class="portfolio__img">
         <p class="portfolio__title">Flickr API</p>
       </a>
-
       <!-- Private Events -->
       <a href="" class="portfolio__item">
         <img src="" alt="" class="portfolio__img">
         <p class="portfolio__title">Private Events</p>
       </a>
-
       <!-- Project 4 -->
       <a href="" class="portfolio__item">
         <img src="" alt="" class="portfolio__img">
@@ -89,30 +82,39 @@
     </div>
   </section>
 
-  <!-- Toolkit -->
-  <section class="toolkit" id="toolkit">
-    <h2 class="section__title section__title--toolkit">Toolkit 💻</h2>
-    <p class="section__subtitle section__subtitle--toolkit">what's in the stack</p>
-    <div class="toolkit__body">
-      <ul class="toolkit__list">
-        <li class="toolkit__item">HTML</li>
-        <li class="toolkit__item">CSS</li>
-        <li class="toolkit__item">Ruby</li>
-        <li class="toolkit__item">Rails</li>
-        <li class="toolkit__item">JavaScript</li>
-        <li class="toolkit__item">SQL</li>
-        <li class="toolkit__item">GitHub</li>
+  <!-- Tools -->
+  <section class="tools" id="tools">
+    <h2 class="section__title section__title--tools">Tools 💻</h2>
+    <p class="section__subtitle section__subtitle--tools">what's in the stack</p>
+    <div class="tools__body">
+      <ul class="tools__list">
+        <li class="tools__item">HTML</li>
+        <li class="tools__item">CSS</li>
+        <li class="tools__item">Ruby</li>
+        <li class="tools__item">Rails</li>
+        <li class="tools__item">JavaScript</li>
+        <li class="tools__item">SQL</li>
+        <li class="tools__item">GitHub</li>
       </ul>
     </div>
   </section>
 
   <footer class="footer">
+    <p>Get in touch!</p>
     <ul class="social-list">
+      <!-- E-mail -->
+      <li class="social-list__item">
+        <a href="mailto:michaeljhchong@gmail.com" class="social-list__link">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </li>
+      <!-- LinkedIn -->
       <li class="social-list__item">
         <a href="https://www.linkedin.com/in/michaeljchong/" class="social-list__link">
           <i class="fa-brands fa-linkedin"></i>
         </a>
       </li>
+      <!-- GitHub -->
       <li class="social-list__item">
         <a href="https://github.com/michaeljchong" class="social-list__link">
           <i class="fa-brands fa-github"></i>
