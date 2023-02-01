@@ -150,3 +150,14 @@ h3 {
     width: calc(100% + 1.5em);
   }
 }
+
+/* Portfolio */
+
+.portfolio {
+  text-align: center;
+}
+
+.portfolio__body {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
