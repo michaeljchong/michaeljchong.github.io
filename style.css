@@ -26,10 +26,10 @@
         0.125em 0.125em 0.25em rgba(0, 0, 0, .15);
 }
 
-@media (min-width: 800px) {
+@media (min-width: 850px) {
   :root {
-    --fs-h1: 4.5rem;
-    --fs-h2: 3.75rem;
+    --fs-h1: 3.8rem;
+    --fs-h2: 2.8rem;
     --fs-h3: 1.5rem;
     --fs-body: 1.125rem;
   }
@@ -47,7 +47,7 @@ body {
 }
 
 section {
-  padding: 5em 2em;
+  padding: 3em 5em;
 }
 
 img {
@@ -98,14 +98,14 @@ h3 {
 .section__subtitle--home,
 .section__subtitle--about,
 .section__subtitle--portfolio,
-.section__subtitle--toolkit {
+.section__subtitle--tools {
   background: var(--clr-accent);
   padding: .25em 1em;
   font-family: var(--ff-secondary);
   margin-bottom: 1em;
 }
 
-/* Home Section */
+/* Home */
 
 .home {
   position: relative;
@@ -113,13 +113,15 @@ h3 {
 
 .home__img {
   box-shadow: var(--bs);
+  border-radius: 1em;
+  max-width: 60%;
 }
 
 .section__subtitle--home {
   display: inline-block;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   .home {
     display: grid;
     width: min-content;
@@ -133,7 +135,7 @@ h3 {
 
   .home__img {
     grid-area: img;
-    min-width: 250px;
+    min-width: 265px;
     position: relative;
     z-index: 2;
   }
