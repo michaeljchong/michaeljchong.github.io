@@ -122,8 +122,8 @@ header {
   left: 0;
   right: 0;
   z-index: 100;
-  transform: translateX(0%);
-  transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
+  transform: translateX(100%);
+  transition: transform 1s ease-in;
 }
 
 .nav__list {
@@ -146,6 +146,37 @@ header {
 
 .nav__link:hover {
   color: var(--clr-accent);
+}
+
+.hamburger {
+  display: block;
+  position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  background: var(--clr-accent);
+  width: 2em;
+  height: 3px;
+  border-radius: 1em;
+  transition: transform 250ms ease-in-out;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.hamburger::before {
+  bottom: 10px;
+}
+
+.hamburger::after {
+  top: 10px;
 }
 
 /* Home */
